@@ -1,139 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>I'm Sorry Babu ❤️</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;min-height:100vh;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at top left,#fff0f5,transparent 40%),linear-gradient(135deg,#ffb6d5,#ffdce9,#fff5f8);overflow:hidden}
-.card{width:min(92%,560px);background:rgba(255,255,255,.97);padding:42px 28px;border-radius:30px;text-align:center;box-shadow:0 20px 60px rgba(180,30,90,.25);position:relative;z-index:10}
-.big-heart{font-size:76px;animation:heartbeat 1.2s infinite}
-@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
-h1{margin:10px 0 20px;color:#e63973;font-size:35px}
-.message{color:#444;font-size:18px;line-height:1.7}.highlight{color:#e63973;font-weight:bold}
-.emergency{margin-top:22px;padding:15px;background:#fff0f5;border-radius:15px;color:#d6336c;font-size:14px;font-weight:bold;border:2px dashed #ff9fbd}
-.buttons{margin:32px auto 0;height:70px;display:flex;align-items:center;justify-content:center;gap:18px;position:relative}
-button{border:0;border-radius:40px;font-size:18px;font-weight:bold;cursor:pointer}
-#yesBtn{background:#e63973;color:#fff;padding:16px 32px;box-shadow:0 8px 20px rgba(230,57,115,.3);transition:transform .2s;z-index:20}
-#yesBtn:hover{transform:scale(1.1)}
-#noBtn{background:#dedede;color:#555;padding:14px 25px;box-shadow:0 5px 15px #0002;z-index:100;transition:left .1s ease-out,top .1s ease-out,transform .1s}
-#success{display:none}
-.success-title{font-size:38px;color:#e63973}
-.success-message{font-size:22px;line-height:1.7;color:#e63973;font-weight:bold}
-.safe{font-size:30px;margin:15px 0}
-.confetti{position:fixed;top:-30px;font-size:25px;pointer-events:none;animation:fall 3s linear forwards;z-index:200}
-@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
-.floating-heart{position:fixed;bottom:-30px;font-size:25px;animation:floatUp linear forwards;pointer-events:none;opacity:.7}
-@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
-.footer{margin-top:20px;font-size:12px;color:#aaa}
-</style>
-</head>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,sans-serif;display:flex;justify-content:center;align-items:center;background:linear-gradient(135deg,#ffd6e7,#fff5f8);overflow:hidden;padding:14px}.card{width:min(94%,560px);background:#fff;padding:30px 20px;border-radius:26px;text-align:center;box-shadow:0 15px 45px #b41e5a40;z-index:10}.big-heart{font-size:64px;animation:pulse 1.2s infinite}@keyframes pulse{50%{transform:scale(1.12)}}h1{margin:8px 0 16px;color:#e63973;font-size:clamp(28px,7vw,35px)}.message{color:#444;font-size:17px;line-height:1.55}.highlight{color:#e63973;font-weight:bold}.emergency{margin-top:18px;padding:13px;background:#fff0f5;border-radius:14px;color:#d6336c;font-size:13px;font-weight:bold;border:2px dashed #ff9fbd}.buttons{margin:24px auto 8px;display:flex;justify-content:center;align-items:center;gap:14px;min-height:62px}button{min-width:125px;min-height:50px;border:0;border-radius:40px;font-size:17px;font-weight:bold;cursor:pointer;touch-action:manipulation}#yesBtn{background:#e63973;color:#fff;box-shadow:0 7px 18px #e6397350}#noBtn{background:#dedede;color:#555;box-shadow:0 5px 15px #0002;z-index:100}#success{display:none}.success-title{font-size:clamp(29px,8vw,38px);color:#e63973}.success-message{font-size:20px;line-height:1.55;color:#e63973;font-weight:bold}.safe{font-size:27px;margin:12px 0}.footer{margin-top:16px;font-size:11px;color:#aaa}.wrong{position:fixed;z-index:300;background:#fff;color:#e63973;border:3px solid #e63973;border-radius:18px;padding:14px 20px;font-size:18px;font-weight:bold;box-shadow:0 8px 30px #0003;animation:pop .25s}@keyframes pop{from{transform:scale(.5)}to{transform:scale(1)}}.confetti{position:fixed;top:-30px;font-size:25px;pointer-events:none;animation:fall 3s linear forwards;z-index:200}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}.floating-heart{position:fixed;bottom:-30px;font-size:25px;animation:floatUp linear forwards;pointer-events:none;opacity:.7}@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:420px){body{align-items:flex-start;padding-top:18px}.card{padding:24px 15px}.big-heart{font-size:55px}.message{font-size:16px}.emergency{font-size:12px}.buttons{gap:10px}button{min-width:112px}}
+</style></head>
 <body>
-
 <div class="card" id="apologyCard">
 <div class="big-heart">❤️</div>
 <h1>Babu... Please Hear Me Out 🥺</h1>
-
-<div class="message">
-I am sorry dear. ❤️<br><br>
-<span class="highlight">Sorry for the harsh words.</span><br><br>
-I never wanted to hurt you.<br>
-I love you and I am genuinely sorry for hurting you.<br><br>
-I know saying "sorry" doesn't magically undo everything...<br>
-but I really mean it. 🥺❤️<br><br>
-So after extensive investigation, emotional damage assessment, and consultation with absolutely nobody...<br><br>
-<span class="highlight">I have concluded that I desperately need your forgiveness.</span>
-</div>
-
-<div class="emergency">
-🚨 RELATIONSHIP EMERGENCY 🚨<br><br>
-Your boyfriend is currently experiencing severe levels of guilt.<br>
-Immediate forgiveness is strongly recommended.
-</div>
-
-<div class="buttons">
-<button id="yesBtn" onclick="acceptApology()">YES ❤️</button>
-<button id="noBtn">NO 😤</button>
-</div>
-
+<div class="message">I am sorry dear. ❤️<br><br><span class="highlight">Sorry for the harsh words.</span><br><br>I never wanted to hurt you.<br>I love you and I am genuinely sorry for hurting you.<br><br>I know saying "sorry" doesn't magically undo everything...<br>but I really mean it. 🥺❤️<br><br><span class="highlight">I desperately need your forgiveness.</span></div>
+<div class="emergency">🚨 RELATIONSHIP EMERGENCY 🚨<br><br>Your boyfriend is experiencing severe levels of guilt.<br>Immediate forgiveness is strongly recommended.</div>
+<div class="buttons"><button id="yesBtn" type="button">YES ❤️</button><button id="noBtn" type="button">NO 😤</button></div>
 <div class="footer">Forgiveness Department • Case #LOVE-001</div>
 </div>
 
-<div class="card" id="success">
-<div class="big-heart">🥳</div>
-<div class="success-title">PRABHASH IS SAFE! 🎉</div>
-<div class="success-message">
-<div class="safe">🟢 RELATIONSHIP: GREAT ❤️</div>
-APOLOGY ACCEPTED!<br><br>
-Angry Mode: <s>ACTIVATED</s> → <b>DEACTIVATED</b> ✅<br><br>
-Prabhash Survival Status:<br>🟢 <b>SAFE</b> 🫡<br><br>
-Crisis successfully avoided.<br>
-Relationship restored to <b>EXCELLENT</b>. 💕<br><br>
-❤️ I LOVE YOU ❤️
-</div>
-</div>
+<div class="card" id="success"><div class="big-heart">🥳</div><div class="success-title">PRABHASH IS SAFE! 🎉</div><div class="success-message"><div class="safe">🟢 RELATIONSHIP: GREAT ❤️</div>APOLOGY ACCEPTED!<br><br>Angry Mode: <s>ACTIVATED</s> → <b>DEACTIVATED</b> ✅<br><br>Prabhash Survival Status:<br>🟢 <b>SAFE</b> 🫡<br><br>Crisis successfully avoided.<br>Relationship restored to <b>EXCELLENT</b>. 💕<br><br>❤️ I LOVE YOU ❤️</div></div>
 
 <script>
-const noBtn=document.getElementById("noBtn");
-const ESCAPE_DISTANCE=150;
-let escaped=false;
-
-function moveNoButton(){
- const w=noBtn.offsetWidth,h=noBtn.offsetHeight,p=15;
- const maxX=innerWidth-w-p,maxY=innerHeight-h-p;
- noBtn.style.position="fixed";
- noBtn.style.left=(p+Math.random()*Math.max(1,maxX-p))+"px";
- noBtn.style.top=(p+Math.random()*Math.max(1,maxY-p))+"px";
- noBtn.style.transform="scale(1.18) rotate("+(Math.random()*24-12)+"deg)";
- escaped=true;
- setTimeout(()=>noBtn.style.transform="scale(1)",130);
-}
-
-document.addEventListener("mousemove",e=>{
- const r=noBtn.getBoundingClientRect();
- const dx=e.clientX-(r.left+r.width/2);
- const dy=e.clientY-(r.top+r.height/2);
- if(Math.hypot(dx,dy)<ESCAPE_DISTANCE)moveNoButton();
-});
-
-noBtn.addEventListener("mouseenter",moveNoButton);
-noBtn.addEventListener("pointerdown",e=>{e.preventDefault();moveNoButton()});
-noBtn.addEventListener("click",e=>{e.preventDefault();moveNoButton()});
-
-function acceptApology(){
- document.getElementById("apologyCard").style.display="none";
- noBtn.remove();
- document.getElementById("success").style.display="block";
- createConfetti();
- createHearts();
-}
-
-function createConfetti(){
- const e=["❤️","💕","💖","💗","🥳","😘","🎉","✨","🌸","🫡"];
- for(let i=0;i<100;i++){
-  let c=document.createElement("div");
-  c.className="confetti";
-  c.textContent=e[Math.floor(Math.random()*e.length)];
-  c.style.left=Math.random()*100+"vw";
-  c.style.animationDuration=2+Math.random()*3+"s";
-  c.style.animationDelay=Math.random()*1.5+"s";
-  document.body.appendChild(c);
-  setTimeout(()=>c.remove(),5500);
- }
-}
-
-function createHearts(){
- setInterval(()=>{
-  let h=document.createElement("div");
-  h.className="floating-heart";
-  h.textContent=["❤️","💕","💖","💗"][Math.floor(Math.random()*4)];
-  h.style.left=Math.random()*100+"vw";
-  h.style.animationDuration=4+Math.random()*4+"s";
-  document.body.appendChild(h);
-  setTimeout(()=>h.remove(),8000);
- },500);
-}
-</script>
-</body>
-</html>
+const yes=document.getElementById("yesBtn"),no=document.getElementById("noBtn");
+function moveNo(){const w=no.offsetWidth,h=no.offsetHeight,p=12;no.style.position="fixed";no.style.left=(p+Math.random()*Math.max(1,innerWidth-w-2*p))+"px";no.style.top=(p+Math.random()*Math.max(1,innerHeight-h-2*p))+"px";no.style.transform="rotate("+(Math.random()*24-12)+"deg) scale(1.12)";setTimeout(()=>no.style.transform="",130)}
+document.addEventListener("mousemove",e=>{const r=no.getBoundingClientRect();if(Math.hypot(e.clientX-(r.left+r.width/2),e.clientY-(r.top+r.height/2))<145)moveNo()});
+no.addEventListener("mouseenter",moveNo);
+function wrongChoice(e){e.preventDefault();moveNo();const x=document.createElement("div");x.className="wrong";x.textContent="❌ WRONG CHOICE! Select YES ❤️";x.style.left="50%";x.style.top="18%";x.style.transform="translateX(-50%)";document.body.appendChild(x);setTimeout(()=>x.remove(),1400)}
+no.addEventListener("pointerdown",wrongChoice);no.addEventListener("click",wrongChoice);
+yes.addEventListener("click",accept);
+function accept(){document.getElementById("apologyCard").style.display="none";no.remove();document.getElementById("success").style.display="block";confetti();hearts()}
+function confetti(){const e=["❤️","💕","💖","🥳","😘","🎉","✨","🌸","🫡"];for(let i=0;i<100;i++){let c=document.createElement("div");c.className="confetti";c.textContent=e[Math.floor(Math.random()*e.length)];c.style.left=Math.random()*100+"vw";c.style.animationDelay=Math.random()*1.2+"s";document.body.appendChild(c);setTimeout(()=>c.remove(),5000)}}
+function hearts(){setInterval(()=>{let h=document.createElement("div");h.className="floating-heart";h.textContent=["❤️","💕","💖"][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+"vw";h.style.animationDuration=4+Math.random()*4+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),8000)},500)}
+</script></body></html>
